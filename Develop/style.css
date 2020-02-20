@@ -130,8 +130,25 @@ button[disabled] {
   }
 }
 
+
+/* slider tool added to page */
+
+#slider {
+  width: 100%;
+}
+
+/* slider tool added to page */
+
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
   }
 }
+
+/* previous Passwrods text size */
+
+.previous_passwords{
+  margin-bottom: 20px;
+}
+
+/* end of previous password */
