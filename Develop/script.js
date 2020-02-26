@@ -83,3 +83,9 @@ function generatePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// supposed to show number value that slider is placed on it was working, but something i have done has broken it.
+var slider = document.getElementById("slidertool")
+slider.addEventListener("input", function() {
+  console.log(slider.value)
+})

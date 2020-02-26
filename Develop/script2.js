@@ -1,6 +1,8 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+document.getElementById("length").innerHTML = "Length: 128";
+
 // Write password to the #password input
 function writePassword() {
 
@@ -17,7 +19,6 @@ function generatePassword() {
   var characertsUsed = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";  
   var characterPull = "";
   var completedPassword = "";
-  
 
   // possible options to choose from when it comes to the character options
   var capitalWords = confirm("Would you like to include upper case letters included?");
@@ -28,14 +29,13 @@ function generatePassword() {
   // Amount of characters selected by the user with slider tool
   let slider = document.getElementById("slidertool").value;
 
-  document.getElementById("length").innerHTML = leng;
+  
 
   //This is a step to set the length based on slider position the user sets
   document.getElementById("slidertool").oninput = function() {
 
-    if (document.getElementById("slidertool").value > 0){
+    if(document.getElementById("slidertool").value > 0){
         document.getElementById("length").innerHTML = "Length: " + document.getElementById("slidertool").value;
-        var leng = "length:" + document.getElementById("slidertool").value
     }
     else{
         document.getElementById("length").innerHTML = "Length: 1";

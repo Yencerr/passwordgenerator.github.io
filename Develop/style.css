@@ -149,11 +149,3 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
-
-/* previous Passwrods text size */
-
-.previous_passwords{
-  margin-bottom: 20px;
-}
-
-/* end of previous password */
