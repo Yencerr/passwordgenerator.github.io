@@ -29,6 +29,8 @@ function generatePassword() {
   // Amount of characters selected by the user with slider tool
   let slider = document.getElementById("slidertool").value;
 
+  
+
   //This is a step to set the length based on slider position the user sets
   document.getElementById("slidertool").oninput = function() {
 
