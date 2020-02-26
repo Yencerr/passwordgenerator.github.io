@@ -66,7 +66,7 @@ function generatePassword() {
       console.log(characterPull);
     }
 
-    // Concatenating random characters from password pool and forming random password
+    // pulling all the info from the character options the user has chosen and pushed it to be formulated
     for (i = 0; i < slider; i++) {
       var randomcharacterPull = characterPull[Math.floor(Math.random() * characterPull.length)];
       var completedPassword = completedPassword.concat(randomcharacterPull);
