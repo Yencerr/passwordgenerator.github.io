@@ -29,17 +29,7 @@ function generatePassword() {
   // Amount of characters selected by the user with slider tool
   let slider = document.getElementById("slidertool").value;
 
-  //This is a step to set the length based on slider position the user sets
-  document.getElementById("slidertool").oninput = function() {
-
-    if(document.getElementById("slidertool").value > 0){
-        document.getElementById("length").innerHTML = "Length: " + document.getElementById("slidertool").value;
-    }
-    else{
-        document.getElementById("length").innerHTML = "Length: 1";
-    }
-
-  }
+  
   
     //Characters used when selected by the user  'upper case words'
     if (capitalWords === true) {
@@ -85,7 +75,22 @@ function generatePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // supposed to show number value that slider is placed on it was working, but something i have done has broken it.
+
+//This is a step to set the length based on slider position the user sets
+document.getElementById("slidertool").oninput = function() {
+
+  if(document.getElementById("slidertool").value > 0){
+      document.getElementById("length").innerHTML = "Length: " + document.getElementById("slidertool").value;
+  }
+  else{
+      document.getElementById("length").innerHTML = "Length: 1";
+  }
+
+}
+
+
 var slider = document.getElementById("slidertool")
 slider.addEventListener("input", function() {
-  console.log(slider.value)
+  console.log(slider.value);
 })
+
